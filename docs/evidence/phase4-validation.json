@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-10-24T09:43:34.478Z",
+  "build": "passed",
+  "typecheck": "passed (build runs strict TypeScript)",
+  "lint": "passed",
+  "tests": {
+    "total": 31,
+    "passed": 31,
+    "failed": 0
+  },
+  "documents": [
+    "functional-spec.md",
+    "business-rules.md",
+    "product-option-dependencies.md",
+    "pricing-observations.md",
+    "state-and-data-model.md",
+    "api-contracts.md",
+    "user-journeys.md",
+    "test-scenarios.md",
+    "fidelity-and-limitations.md"
+  ],
+  "browser": {
+    "status": "blocked",
+    "checks": 0,
+    "screenshots": 0
+  },
+  "scope": "independent browser-local mock; reference private behaviour unverified"
+}

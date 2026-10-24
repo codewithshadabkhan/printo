@@ -1,0 +1,169 @@
+
+> printo-reference-recreation@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: CFG-1: every catalogue default and quantity table validates
+ok 1 - CFG-1: every catalogue default and quantity table validates
+  ---
+  duration_ms: 4.923704
+  ...
+# Subtest: CFG-2: last selection resets premium stock, delivery, finish and quantity dependencies
+ok 2 - CFG-2: last selection resets premium stock, delivery, finish and quantity dependencies
+  ---
+  duration_ms: 1.475866
+  ...
+# Subtest: CFG-3: material removes incompatible back printing and invalid query values normalise
+ok 3 - CFG-3: material removes incompatible back printing and invalid query values normalise
+  ---
+  duration_ms: 1.470436
+  ...
+# Subtest: PRICE-1: integer table and option examples match documented local prices
+ok 4 - PRICE-1: integer table and option examples match documented local prices
+  ---
+  duration_ms: 1.210765
+  ...
+# Subtest: PRICE-2: half-up paise rounding and totals never recompose rounded units
+ok 5 - PRICE-2: half-up paise rounding and totals never recompose rounded units
+  ---
+  duration_ms: 25.490581
+  ...
+# Subtest: COUPON-1: thresholds, caps, category scope, invalid/expired codes and delivery exclusion
+ok 6 - COUPON-1: thresholds, caps, category scope, invalid/expired codes and delivery exclusion
+  ---
+  duration_ms: 3.419877
+  ...
+# Subtest: CART-1: canonical identity, different documents, edits merging and immutable snapshots
+ok 7 - CART-1: canonical identity, different documents, edits merging and immutable snapshots
+  ---
+  duration_ms: 2.106603
+  ...
+# Subtest: CART-2: tampered keys, unavailable products, invalid configurations and capacity
+ok 8 - CART-2: tampered keys, unavailable products, invalid configurations and capacity
+  ---
+  duration_ms: 3.90677
+  ...
+# Subtest: STORE-1: expiration, unchanged refresh, v1 migration and corrupt-state handling
+ok 9 - STORE-1: expiration, unchanged refresh, v1 migration and corrupt-state handling
+  ---
+  duration_ms: 2.32734
+  ...
+# Subtest: URL-1: listing filters/query/page round trip without losing product configuration
+ok 10 - URL-1: listing filters/query/page round trip without losing product configuration
+  ---
+  duration_ms: 1.101419
+  ...
+# Subtest: DESIGN-1: front/back edits, undo/redo and redo invalidation
+ok 11 - DESIGN-1: front/back edits, undo/redo and redo invalidation
+  ---
+  duration_ms: 0.557014
+  ...
+# Subtest: DESIGN-2: upload signatures, MIME, size and hostile persisted documents
+ok 12 - DESIGN-2: upload signatures, MIME, size and hostile persisted documents
+  ---
+  duration_ms: 0.632817
+  ...
+# Subtest: DESIGN-3: draft resume, resolution warning and transform bounds
+ok 13 - DESIGN-3: draft resume, resolution warning and transform bounds
+  ---
+  duration_ms: 0.512756
+  ...
+# Subtest: ADDRESS-1: required fields, PIN rules and serviceability fixtures
+ok 14 - ADDRESS-1: required fields, PIN rules and serviceability fixtures
+  ---
+  duration_ms: 0.713918
+  ...
+# Subtest: ASYNC-1: aborted quote and failed delivery retry do not commit a result
+ok 15 - ASYNC-1: aborted quote and failed delivery retry do not commit a result
+  ---
+  duration_ms: 12.221368
+  ...
+# Subtest: CHECKOUT-1: duplicate intent resolves once, redacted address and expired session
+ok 16 - CHECKOUT-1: duplicate intent resolves once, redacted address and expired session
+  ---
+  duration_ms: 3.655583
+  ...
+# Subtest: CHECKOUT-2: current cart, coupon, acknowledgement, delivery and empty prerequisites
+ok 17 - CHECKOUT-2: current cart, coupon, acknowledgement, delivery and empty prerequisites
+  ---
+  duration_ms: 8.138736
+  ...
+# Subtest: CHECKOUT-3: actual mid-flight cart changes, failure/retry and expired mock login
+ok 18 - CHECKOUT-3: actual mid-flight cart changes, failure/retry and expired mock login
+  ---
+  duration_ms: 19.37274
+  ...
+# Subtest: ORDER-1: immutable history, reordered current-price snapshots and unavailable-line skips
+ok 19 - ORDER-1: immutable history, reordered current-price snapshots and unavailable-line skips
+  ---
+  duration_ms: 2.923859
+  ...
+# Subtest: STORE-2: quota failures are reported and no confirmation is silently lost
+ok 20 - STORE-2: quota failures are reported and no confirmation is silently lost
+  ---
+  duration_ms: 2.281926
+  ...
+# Subtest: ORDER-2: reorder uses changed current catalogue prices and malformed history is ignored
+ok 21 - ORDER-2: reorder uses changed current catalogue prices and malformed history is ignored
+  ---
+  duration_ms: 2.362016
+  ...
+# Subtest: CHECKOUT-4: cancelling a pending mock confirmation saves no order
+ok 22 - CHECKOUT-4: cancelling a pending mock confirmation saves no order
+  ---
+  duration_ms: 0.901368
+  ...
+# Subtest: volume pricing, stock premiums, delivery and unit quantities stay consistent
+ok 23 - volume pricing, stock premiums, delivery and unit quantities stay consistent
+  ---
+  duration_ms: 2.837475
+  ...
+# Subtest: identical configurations merge, distinct designs remain separate
+ok 24 - identical configurations merge, distinct designs remain separate
+  ---
+  duration_ms: 17.74335
+  ...
+# Subtest: corrupted and tampered persisted cart data cannot produce invalid totals
+ok 25 - corrupted and tampered persisted cart data cannot produce invalid totals
+  ---
+  duration_ms: 1.964485
+  ...
+# Subtest: search handles case, whitespace, multiple terms and zero results
+ok 26 - search handles case, whitespace, multiple terms and zero results
+  ---
+  duration_ms: 0.45957
+  ...
+# Subtest: template filtering uses OR within a group and AND across groups
+ok 27 - template filtering uses OR within a group and AND across groups
+  ---
+  duration_ms: 0.410114
+  ...
+# Subtest: all catalogue routes are unique and all local illustrations exist
+ok 28 - all catalogue routes are unique and all local illustrations exist
+  ---
+  duration_ms: 1.640951
+  ...
+# Subtest: every implemented catalogue route and representative secondary route supports direct SPA refresh
+ok 29 - every implemented catalogue route and representative secondary route supports direct SPA refresh
+  ---
+  duration_ms: 78.844529
+  ...
+# Subtest: production entry scripts, styles and original images are present; unknown assets return 404
+ok 30 - production entry scripts, styles and original images are present; unknown assets return 404
+  ---
+  duration_ms: 28.788336
+  ...
+# Subtest: full local UI journey and state transitions (DOM simulation, not rendered-browser QA)
+ok 31 - full local UI journey and state transitions (DOM simulation, not rendered-browser QA)
+  ---
+  duration_ms: 2850.359224
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4221.030141

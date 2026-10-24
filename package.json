@@ -1,0 +1,33 @@
+{
+  "name": "printo-reference-recreation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "node scripts/serve.mjs",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint src scripts tests",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/browser-qa.mjs"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "https://registry.npmjs.org/@eslint/js/-/js-9.39.1.tgz",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "esbuild": "0.25.12",
+    "eslint": "9.39.1",
+    "globals": "16.4.0",
+    "jsdom": "^20.0.3",
+    "playwright": "^1.59.1",
+    "prettier": "^3.6.2",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.48.1",
+    "vite": "6.2.2"
+  }
+}
